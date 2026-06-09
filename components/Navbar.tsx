@@ -35,12 +35,12 @@ export default function Navbar() {
     <header className="fixed top-0 w-full z-[100]">
       {/* Navbar Container */}
       <nav
-        className={`mx-auto transition-all duration-300 ease-in-out ${
-          scrolled
-            ? "mt-4 w-[90%] px-6 py-3 rounded-2xl bg-navy/90 backdrop-blur-md border border-gold/30 shadow-lg"
-            : "w-full px-6 py-6 bg-transparent"
-        }`}
-      >
+  className={`mx-auto transition-all duration-500 ease-in-out border-b border-white/10 ${
+    scrolled
+      ? "mt-4 w-[90%] px-6 py-3 rounded-2xl bg-[#2D3A3A]/70 backdrop-blur-md border border-white/10 shadow-xl"
+      : "w-full px-6 py-6 bg-[#2D3A3A]/30 backdrop-blur-sm border-b border-white/5"
+  }`}
+>
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 z-[101]">
