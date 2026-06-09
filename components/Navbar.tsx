@@ -35,7 +35,7 @@ export default function Navbar() {
           
           {/* LOGO */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="relative w-12 h-12 md:w-24 md:h-24">
+            <div className="relative w-24 h-24 md:w-32 md:h-34">
               <Image src="/images/logo.png" alt="Silver Steps Villa" fill className="object-contain" priority />
             </div>
             <span className="font-serif text-xl font-bold text-white tracking-wider hidden md:block">

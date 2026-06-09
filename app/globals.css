@@ -11,20 +11,23 @@
   --font-serif: "Playfair Display", serif;
 }
 
-@layer base {
-  body {
-    @apply bg-cream text-navy font-sans antialiased;
-  }
 
-  /* Smooth Scrolling */
-  html {
-    @apply scroll-smooth;
-  }
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
 }
 
-/* Custom Utilities */
-@layer utilities {
-  .nav-link {
-    @apply uppercase tracking-widest text-sm hover:text-gold transition-colors duration-300;
-  }
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: var(--color-gold);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }

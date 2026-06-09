@@ -7,15 +7,20 @@ export default function Hero() {
     <section className="relative w-full h-screen overflow-hidden">
       {/* BACKGROUND VIDEO */}
       <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/videos/villa-showcase.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+  autoPlay
+  loop
+  muted
+  playsInline
+  // Optimization: Poster image ka link daal dein taaki video load hone se pehle blank screen na dikhe
+  poster="https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781012381/your-thumbnail-image.jpg"
+  className="absolute inset-0 w-full h-full object-cover"
+>
+  <source 
+    src="https://res.cloudinary.com/ddy8vp8zy/video/upload/v1781014085/DJI_20260410190455_0074_D_o3n74t.mp4" 
+    type="video/mp4" 
+  />
+  Your browser does not support the video tag.
+</video>
 
       {/* GLOBAL THEME OVERLAY - Using navy from globals.css */}
       <div className="absolute inset-0 bg-black/60 z-10" />
