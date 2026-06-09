@@ -4,25 +4,36 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-screen overflow-hidden">
-      {/* BACKGROUND VIDEO */}
+    <section className="relative w-full h-screen overflow-hidden bg-black">
+      {/* LANDSCAPE VIDEO (Desktop) */}
       <video
-  autoPlay
-  loop
-  muted
-  playsInline
-  // Optimization: Poster image ka link daal dein taaki video load hone se pehle blank screen na dikhe
-  poster="https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781012381/your-thumbnail-image.jpg"
-  className="absolute inset-0 w-full h-full object-cover"
->
-  <source 
-    src="https://res.cloudinary.com/ddy8vp8zy/video/upload/v1781014085/DJI_20260410190455_0074_D_o3n74t.mp4" 
-    type="video/mp4" 
-  />
-  Your browser does not support the video tag.
-</video>
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="hidden md:block absolute inset-0 w-full h-full object-cover"
+      >
+        <source 
+          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/v1781014085/DJI_20260410190455_0074_D_o3n74t.mp4" 
+          type="video/mp4" 
+        />
+      </video>
 
-      {/* GLOBAL THEME OVERLAY - Using navy from globals.css */}
+      {/* PORTRAIT VIDEO (Mobile) */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="block md:hidden absolute inset-0 w-full h-full object-cover"
+      >
+        <source 
+          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/v1781013295/VID_20260609_064222_064_bsl_avpmjc.mp4" 
+          type="video/mp4" 
+        />
+      </video>
+
+      {/* OVERLAY */}
       <div className="absolute inset-0 bg-black/60 z-10" />
 
       {/* CONTENT */}

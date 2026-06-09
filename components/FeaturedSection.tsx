@@ -5,12 +5,33 @@ import React from "react";
 export default function FeaturesSection() {
   return (
     <section className="relative w-full h-[600px] flex items-center justify-center overflow-hidden">
-      {/* Background Image - Yahan apni villa ki best photo lagayein */}
-      <img
-        src="/villa-luxury-view.jpg" 
-        alt="Silver Steps Villa Experience"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+      {/* LANDSCAPE VIDEO (Desktop) */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="hidden md:block absolute inset-0 w-full h-full object-cover"
+      >
+        <source 
+          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/v1781013295/sp_20260609_1080p_30f_20260609_190753_online-video-cutter.com_gn5to6.mp4" 
+          type="video/mp4" 
+        />
+      </video>
+
+      {/* PORTRAIT VIDEO (Mobile) */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="block md:hidden absolute inset-0 w-full h-full object-cover"
+      >
+        <source 
+          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/v1781014405/DJI_20260410161548_0039_D_cvpcgr.mov" 
+          type="video/mp4" 
+        />
+      </video>
       
       {/* Overlay for readability */}
       <div className="absolute inset-0 bg-navy/70 z-10" />
