@@ -12,7 +12,7 @@ export default function Home() {
     <div className="">
       <Hero/>
       <PremiumFeatures/>
-      {/* <FeaturesSection/> */}
+      <FeaturesSection/>
       <SocialProof/>
       <DirectBooking/>
       <LocationPage/>
