@@ -37,7 +37,7 @@ export default function RootLayout({
           <Navbar/>
           {children}
           <Footer/>
-          {/* <WhatsAppButton/> */}
+          <WhatsAppButton/>
         </main>
         {/* You can add a Footer component here later */}
       </body>
