@@ -57,7 +57,7 @@ const WhatsAppButton = () => {
       {/* Floating Button - Gold Accent */}
       <button
         onClick={() => setOpenChat((prev) => !prev)}
-        className="fixed bottom-6 right-6 z-[9998] bg-[#2D3A3A] hover:bg-[#C5A059] text-white rounded-full p-4 shadow-xl transition-all duration-300 hover:scale-110 flex items-center justify-center"
+        className="fixed bottom-6 right-6 z-[999] bg-[#2D3A3A] hover:bg-[#C5A059] text-white rounded-full p-4 shadow-xl transition-all duration-300 hover:scale-110 flex items-center justify-center"
       >
         <FaWhatsapp className="text-3xl" />
       </button>

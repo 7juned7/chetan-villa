@@ -91,7 +91,7 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile Menu Overlay */}
-      <div className={`fixed inset-0 z-[999] bg-[#2D3A3A] pt-10 px-8 transition-all duration-500 ease-in-out ${mobileMenu ? "opacity-100 visible" : "opacity-0 invisible"}`}>
+      <div className={`fixed inset-0 z-[9999] bg-[#2D3A3A] pt-10 px-8 transition-all duration-500 ease-in-out ${mobileMenu ? "opacity-100 visible" : "opacity-0 invisible"}`}>
         <div className="flex justify-end mb-10">
           <button onClick={() => setMobileMenu(false)} className="text-white text-4xl font-light hover:text-[#C5A059]">×</button>
         </div>
@@ -102,7 +102,7 @@ export default function Navbar() {
             </Link>
           ))}
           {/* Real Instagram Link Mobile */}
-          <Link href="https://www.instagram.com/silverstepsvilla/" target="_blank" rel="noopener noreferrer" className="mt-8 text-white hover:text-[#C5A059]">
+          <Link href="https://www.instagram.com/silverstepsvilla/" target="_blank" rel="noopener noreferrer" className="mt-8 justify-center items-center flex gap-2 text-white hover:text-[#C5A059]">
            Instagram <InstagramIcon size={32} />
           </Link>
           <Link href="/booking" onClick={() => setMobileMenu(false)} className="mt-4 bg-[#C5A059] text-[#2D3A3A] px-10 py-4 rounded-full text-lg font-bold text-center">
