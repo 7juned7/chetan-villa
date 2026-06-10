@@ -27,7 +27,6 @@ export default function BookingPage() {
       return;
     }
     
-    // Professional Message Format
     const dateStr = format(selected, "PPP");
     const message = `✨ *New Booking Inquiry - Silver Steps Villa* ✨%0A%0AHello, I would like to request a booking for: *${dateStr}*.%0A%0APlease let me know if the villa is available and confirm the next steps to proceed. Looking forward to my stay!`;
     
@@ -39,7 +38,7 @@ export default function BookingPage() {
       <div className="bg-white p-8 rounded-3xl shadow-xl border border-[#2D3A3A]/10 max-w-md w-full">
         <h1 className="text-2xl font-serif text-[#2D3A3A] mb-2 text-center">Book Your Stay</h1>
         <p className="text-sm text-red-600 mb-6 text-center italic">
-          Dates in red are already reserved.
+          Dates in red are already reserved or unavailable.
         </p>
 
         <div className="flex justify-center mb-6">
@@ -52,6 +51,14 @@ export default function BookingPage() {
               onSelect={setSelected}
               disabled={[{ before: new Date() }, ...blockedDates]}
               className="text-[#2D3A3A]"
+              // Yahan humne style aur cursor fixed kar diya hai
+              modifiersStyles={{
+                disabled: { 
+                  color: '#dc2626', // Red color
+                  cursor: 'not-allowed', 
+                  opacity: '0.5' 
+                }
+              }}
             />
           )}
         </div>

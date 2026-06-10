@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link"; // Link component ka use behtar hai
 
 export default function FeaturesSection() {
   return (
@@ -33,12 +34,12 @@ export default function FeaturesSection() {
         />
       </video>
       
-      {/* Overlay for readability */}
-      <div className="absolute inset-0 bg-navy/70 z-10" />
+      {/* Overlay for readability (Updated to #2D3A3A/70) */}
+      <div className="absolute inset-0 bg-[#2D3A3A]/70 z-10" />
 
       {/* Content Container */}
       <div className="relative z-20 text-center px-6 max-w-4xl">
-        <span className="text-gold tracking-[0.4em] uppercase text-xs font-semibold mb-4 block">
+        <span className="text-[#C5A059] tracking-[0.4em] uppercase text-xs font-semibold mb-4 block">
           The Experience
         </span>
         
@@ -59,9 +60,13 @@ export default function FeaturesSection() {
           ))}
         </div>
 
-        <button className="mt-12 bg-gold text-navy px-10 py-3 rounded-full font-bold hover:scale-105 transition-transform">
+        {/* Link updated to /amenities and colors updated */}
+        <Link 
+          href="/amenities" 
+          className="mt-24 inline-block bg-[#C5A059] text-[#2D3A3A] px-10 py-3 rounded-full font-bold hover:scale-105 transition-transform"
+        >
           DISCOVER MORE
-        </button>
+        </Link>
       </div>
     </section>
   );

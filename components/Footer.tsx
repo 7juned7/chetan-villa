@@ -1,51 +1,59 @@
+"use client";
+
 import Link from "next/link";
-// React-icons se import karna ab error-free hoga
-import { FaInstagram, FaLinkedin, FaTwitter, FaEnvelope, FaPhone, FaMapMarker } from "react-icons/fa";
+
+// Custom SVG Icons
+const InstagramIcon = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+  </svg>
+);
+
+const WhatsAppIcon = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+  </svg>
+);
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2D3A3A] text-white pt-16 pb-8 px-6">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 mb-12">
+    <footer className="bg-[#2D3A3A] text-white py-16 px-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
         
-        {/* Brand Section */}
+        {/* Brand Info */}
         <div>
-          <h3 className="font-serif text-2xl text-[#C5A059] mb-4">SILVER STEPS</h3>
-          <p className="text-white/60 leading-relaxed">
-            Experience the tranquility of Bhimtal. Your luxury 3BHK getaway awaits.
+          <h3 className="font-serif text-2xl text-[#C5A059] mb-4">Silver Steps Villa</h3>
+          <p className="text-white/60 text-sm leading-relaxed">
+            Experience tranquility above the clouds. A luxury 3BHK getaway in the heart of Bhimtal, crafted for memories.
           </p>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h4 className="font-bold mb-4 uppercase tracking-widest text-sm text-[#C5A059]">Quick Links</h4>
-          <ul className="space-y-2 text-white/60">
-            <li><Link href="/villa" className="hover:text-white transition">The Villa</Link></li>
-            <li><Link href="/amenities" className="hover:text-white transition">Amenities</Link></li>
-            <li><Link href="/gallery" className="hover:text-white transition">Gallery</Link></li>
-            <li><Link href="/contact" className="hover:text-white transition">Contact Us</Link></li>
+          <h4 className="font-bold text-[#C5A059] mb-4 uppercase tracking-widest text-sm">Explore</h4>
+          <ul className="space-y-3 text-white/80">
+            <li><Link href="/" className="hover:text-[#C5A059] transition">Home</Link></li>
+            <li><Link href="/villa" className="hover:text-[#C5A059] transition">The Villa</Link></li>
+            <li><Link href="/amenities" className="hover:text-[#C5A059] transition">Amenities</Link></li>
+            <li><Link href="/location" className="hover:text-[#C5A059] transition">Location</Link></li>
           </ul>
         </div>
 
-        {/* Contact Info */}
+        {/* Contact & Social */}
         <div>
-          <h4 className="font-bold mb-4 uppercase tracking-widest text-sm text-[#C5A059]">Reach Us</h4>
-          <div className="space-y-3 text-white/60">
-            <p className="flex items-center gap-2"><FaMapMarker /> Bhimtal, Uttarakhand</p>
-            <p className="flex items-center gap-2"><FaPhone /> +91 89209 24077</p>
-            <p className="flex items-center gap-2"><FaEnvelope /> info@silversteps.com</p>
+          <h4 className="font-bold text-[#C5A059] mb-4 uppercase tracking-widest text-sm">Connect</h4>
+          <div className="flex justify-center md:justify-start gap-6">
+            <a href="https://www.instagram.com/silverstepsvilla/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A059] transition">
+              <InstagramIcon />
+            </a>
+            <a href="https://wa.me/918920924077" target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A059] transition">
+              <WhatsAppIcon />
+            </a>
           </div>
-          
-          {/* Social Icons */}
-          <div className="flex gap-4 mt-6">
-            <a href="#" className="p-2 bg-white/5 rounded-full hover:bg-[#C5A059] transition"><FaInstagram size={20} /></a>
-            <a href="#" className="p-2 bg-white/5 rounded-full hover:bg-[#C5A059] transition"><FaLinkedin size={20} /></a>
-            <a href="#" className="p-2 bg-white/5 rounded-full hover:bg-[#C5A059] transition"><FaTwitter size={20} /></a>
-          </div>
+          <p className="mt-6 text-white/50 text-xs">© 2026 Silver Steps Villa. All rights reserved.</p>
         </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto pt-8 border-t border-white/10 text-center text-sm text-white/40">
-        © {new Date().getFullYear()} Silver Steps Villa. All Rights Reserved.
       </div>
     </footer>
   );

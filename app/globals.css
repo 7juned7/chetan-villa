@@ -11,42 +11,6 @@
   --font-serif: "Playfair Display", serif;
 }
 
-/* 1. Custom Calendar Styling */
-.rdp {
-  --rdp-cell-size: 40px;
-  --rdp-accent-color: #2D3A3A; /* Primary Navy Color */
-  --rdp-background-color: #F4F1EA;
-  margin: 0;
-}
-
-/* 2. Style for Unavailable (Booked) Dates */
-.rdp-day_disabled {
-  opacity: 0.3 !important;
-  text-decoration: line-through !important;
-  cursor: not-allowed !important;
-  color: #94a3b8 !important;
-}
-
-/* 3. Style for Selected Date */
-.rdp-day_selected, 
-.rdp-day_selected:hover, 
-.rdp-day_selected:focus {
-  background-color: #2D3A3A !important;
-  color: white !important;
-  font-weight: bold;
-}
-
-/* 4. Hover Effect for Available Dates */
-.rdp-day:hover:not(.rdp-day_disabled) {
-  background-color: #C5A059 !important; /* Gold hover effect */
-  color: white !important;
-  border-radius: 50%;
-}.rdp-day_disabled {
-  opacity: 0.8 !important; /* Slightly more visible */
-  text-decoration: line-through !important;
-  cursor: not-allowed !important;
-  color: #DC2626 !important; /* Tailwind's red-600 */
-}
 
 /* 5. General Layout Tweaks for the Booking Card */
 body {

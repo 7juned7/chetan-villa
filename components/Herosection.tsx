@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 export default function Hero() {
@@ -51,20 +52,18 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col md:flex-row gap-4">
-          <a
-            href="https://wa.me/918920924077"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gold text-navy px-8 py-4 rounded-full font-bold hover:bg-white transition-all text-lg shadow-lg"
-          >
-            BOOK YOUR STAY
-          </a>
-          <a
+        <Link
+  href="/booking"
+  className="bg-[#C5A059] text-[#2D3A3A] px-8 py-4 rounded-full font-bold hover:bg-white transition-all text-lg shadow-lg"
+>
+  BOOK YOUR STAY
+</Link>
+          <Link
             href="/gallery"
             className="bg-transparent border border-white/30 text-white px-8 py-4 rounded-full font-medium hover:bg-white/10 transition-all text-lg backdrop-blur-sm"
           >
             VIEW GALLERY
-          </a>
+          </Link>
         </div>
       </div>
     </section>
