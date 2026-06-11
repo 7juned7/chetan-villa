@@ -49,13 +49,13 @@ export default function Navbar() {
       <nav
         className={`mx-auto transition-all duration-500 ease-in-out border-b ${
           scrolled
-            ? "mt-4 w-[90%] px-6 py-3 rounded-2xl bg-[#2D3A3A]/70 backdrop-blur-md border-white/10 shadow-xl"
-            : "w-full px-6 py-6 bg-[#2D3A3A]/30 backdrop-blur-sm border-white/5"
+            ? "mt-4 w-[90%] px-6 py-2 rounded-2xl bg-[#2D3A3A]/70 backdrop-blur-md border-white/10 shadow-xl"
+            : "w-full px-6 py-3 bg-[#2D3A3A]/30 backdrop-blur-sm border-white/5"
         }`}
       >
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <Link href="/" className="flex items-center gap-2 relative z-[1001]">
-            <div className="relative w-12 h-12">
+            <div className="relative w-24 h-24 ">
              <Image 
   src="https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781185137/chetan-villa/logo.png"
   alt="Logo"
