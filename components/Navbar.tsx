@@ -56,7 +56,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <Link href="/" className="flex items-center gap-2 relative z-[1001]">
             <div className="relative w-12 h-12">
-              <Image src="/images/logo.png" alt="Logo" fill className="object-contain" priority />
+             <Image 
+  src="https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781185137/chetan-villa/logo.png"
+  alt="Logo"
+  fill 
+  className="object-contain" 
+  priority
+/>
             </div>
             <span className="font-serif text-lg font-bold text-white tracking-widest hidden sm:block">
               SILVER STEPS
