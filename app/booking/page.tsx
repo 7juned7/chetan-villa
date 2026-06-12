@@ -128,8 +128,7 @@ Please share pricing and availability details.`;
     { before: new Date() },
     ...blockedDates,
   ]}
-  pagedNavigation
-  showOutsideDays
+  excludeDisabled
   className="text-[#2D3A3A]"
   modifiersStyles={{
     disabled: {
