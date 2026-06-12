@@ -88,13 +88,13 @@ const handleBooking = () => {
 
   const message = `✨ *New Booking Inquiry - Silver Steps Villa* ✨
 
- Check-in: ${checkIn}
- Check-out: ${checkOut}
+📅 Check-in: ${checkIn}
+📅 Check-out: ${checkOut}
 
-Male Guests: ${male}
- Female Guests: ${female}
- Kids (3-12): ${kids}
- Infants (<3): ${infants}
+👨 Male Guests: ${male}
+👩 Female Guests: ${female}
+🧒 Kids (3-12): ${kids}
+👶 Infants (<3): ${infants}
 
 👥 Total Guests: ${totalGuests}
 
