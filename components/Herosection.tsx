@@ -15,7 +15,7 @@ export default function Hero() {
         className="hidden md:block absolute inset-0 w-full h-full object-cover"
       >
         <source 
-          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/v1781014085/DJI_20260410190455_0074_D_o3n74t.mp4" 
+          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/v1781335733/chetan-villa/download_20260613_125440_0000_pslbch.mp4" 
           type="video/mp4" 
         />
       </video>
@@ -29,7 +29,7 @@ export default function Hero() {
         className="block md:hidden absolute inset-0 w-full h-full object-cover"
       >
         <source 
-          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/v1781013295/VID_20260609_064222_064_bsl_avpmjc.mp4" 
+          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/v1781334223/chetan-villa/IMG_4992_ytyzw4.movhttps://res.cloudinary.com/ddy8vp8zy/video/upload/v1781334223/chetan-villa/IMG_4992_ytyzw4.mov" 
           type="video/mp4" 
         />
       </video>

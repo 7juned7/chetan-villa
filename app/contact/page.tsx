@@ -26,7 +26,7 @@ export default function ContactPage() {
             </div>
             <div className="flex items-center gap-4">
               <Mail className="text-[#C5A059]" size={24} />
-              <span className="text-[#2D3A3A] font-medium">info@silverstepsvilla.com</span>
+              <span className="text-[#2D3A3A] font-medium">silverstepsvilla@gmail.com</span>
             </div>
             <div className="flex items-start gap-4">
               <MapPin className="text-[#C5A059] shrink-0" size={24} />
