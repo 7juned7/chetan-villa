@@ -17,10 +17,20 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Silver Steps Villa | Luxury Cottage in Bhimtal",
-  description: "Experience a luxury 3BHK cottage in the heart of Bhimtal, Uttarakhand. Featuring a private pool, gym, and lawn. Book your peaceful getaway today.",
-  keywords: ["Silver Steps Villa", "Bhimtal Holiday Home", "Luxury Villa Uttarakhand", "Cottage rental Bhimtal", "Private pool villa"],
+  description:
+    "Experience a luxury 3BHK cottage in the heart of Bhimtal, Uttarakhand. Featuring a private pool, gym, and lawn. Book your peaceful getaway today.",
+  keywords: [
+    "Silver Steps Villa",
+    "Bhimtal Holiday Home",
+    "Luxury Villa Uttarakhand",
+    "Cottage rental Bhimtal",
+    "Private pool villa",
+  ],
+  verification: {
+    google: "AzCypw0CLN1C5ZkIsL9rfPPmigKLRCtVO6NQuopZCdw",
+  },
 };
-
+<meta name="google-site-verification" content="AzCypw0CLN1C5ZkIsL9rfPPmigKLRCtVO6NQuopZCdw" />
 export default function RootLayout({
   children,
 }: Readonly<{
