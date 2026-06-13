@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://silverstepsvilla.in/',
+  siteUrl: 'https://www.silverstepsvilla.in/',
   generateRobotsTxt: true,
 }
