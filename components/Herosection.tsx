@@ -29,7 +29,7 @@ export default function Hero() {
         className="block md:hidden absolute inset-0 w-full h-full object-cover"
       >
         <source 
-          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/v1781334223/chetan-villa/IMG_4992_ytyzw4.movhttps://res.cloudinary.com/ddy8vp8zy/video/upload/v1781334223/chetan-villa/IMG_4992_ytyzw4.mov" 
+          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/v1781334223/chetan-villa/IMG_4992_ytyzw4.mov" 
           type="video/mp4" 
         />
       </video>
