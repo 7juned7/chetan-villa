@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://silverstepsvilla.in/
+Host: https://www.silverstepsvilla.in/
 
 # Sitemaps
-Sitemap: https://silverstepsvilla.in/sitemap.xml
+Sitemap: https://www.silverstepsvilla.in/sitemap.xml

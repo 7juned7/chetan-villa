@@ -33,38 +33,38 @@ const POLICIES = [
 
 export default function PoliciesPage() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-sand min-h-screen">
       <div className="max-w-4xl mx-auto px-6">
         
         {/* Header */}
         <div className="mb-16">
           <span className="text-gold tracking-[0.4em] uppercase text-xs font-semibold">House Rules</span>
-          <h2 className="text-4xl md:text-5xl font-serif text-navy mt-4">
+          <h2 className="text-4xl md:text-5xl font-serif text-sage mt-4 leading-tight">
             Guest <span className="italic font-light">Policies</span>
           </h2>
-          <p className="text-navy/60 mt-6 max-w-2xl">
+          <p className="text-sage/75 mt-6 max-w-2xl text-sm md:text-base leading-relaxed">
             To ensure a pleasant stay for everyone, please review our property guidelines. By booking with us, you agree to these terms.
           </p>
         </div>
 
         {/* Policies List */}
-        <div className="space-y-8">
+        <div className="space-y-6">
           {POLICIES.map((p, i) => (
-            <div key={i} className="flex gap-6 p-6 border border-navy/5 rounded-2xl bg-cream/30">
-              <div className="text-gold mt-1 shrink-0">{p.icon}</div>
+            <div key={i} className="flex gap-6 p-6 border border-sage/5 rounded-3xl bg-white shadow-sm hover:border-gold/30 hover:-translate-y-0.5 transition-all duration-300">
+              <div className="text-gold mt-1 shrink-0 bg-sand p-2.5 rounded-2xl border border-sage/5">{p.icon}</div>
               <div>
-                <h4 className="text-lg font-bold text-navy mb-2">{p.title}</h4>
-                <p className="text-navy/70 leading-relaxed text-sm md:text-base">{p.desc}</p>
+                <h4 className="text-lg font-bold text-sage mb-2 font-serif">{p.title}</h4>
+                <p className="text-sage/70 leading-relaxed text-sm md:text-base">{p.desc}</p>
               </div>
             </div>
           ))}
         </div>
 
         {/* Contact Footer */}
-        <div className="mt-16 p-8 bg-navy text-white rounded-2xl text-center">
+        <div className="mt-16 p-8 bg-sage text-white rounded-3xl text-center border border-white/5 shadow-lg">
           <h4 className="font-serif text-xl mb-4">Have Questions?</h4>
-          <p className="text-white/70 mb-6">Need clarification on our policies? We're here to help.</p>
-          <a href="https://wa.me/918920924077" className="inline-block bg-gold text-navy px-8 py-3 rounded-full font-bold hover:scale-105 transition-transform">
+          <p className="text-white/70 mb-6 text-sm max-w-sm mx-auto">Need clarification on our policies? We're here to help.</p>
+          <a href="https://wa.me/918920924077" className="inline-block bg-gold text-sage px-8 py-3 rounded-full font-bold hover:bg-white hover:scale-105 transition-all tracking-wider text-sm shadow-md">
             CONTACT US ON WHATSAPP
           </a>
         </div>

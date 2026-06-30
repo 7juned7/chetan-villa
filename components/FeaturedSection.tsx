@@ -34,28 +34,28 @@ export default function FeaturesSection() {
         />
       </video>
       
-      {/* Overlay for readability (Updated to #2D3A3A/70) */}
-      <div className="absolute inset-0 bg-[#2D3A3A]/70 z-10" />
+      {/* Overlay for readability (Updated to sage/75) */}
+      <div className="absolute inset-0 bg-sage/35 z-10" />
 
       {/* Content Container */}
       <div className="relative z-20 text-center px-6 max-w-4xl">
-        <span className="text-[#C5A059] tracking-[0.4em] uppercase text-xs font-semibold mb-4 block">
+        <span className="text-gold tracking-[0.4em] uppercase text-xs font-semibold mb-4 block">
           The Experience
         </span>
         
-        <h2 className="text-4xl md:text-6xl font-serif text-white mb-8">
-          A Sanctuary Above <br /> <span className="italic font-light">the Clouds</span>
+        <h2 className="text-4xl md:text-6xl font-serif text-white mb-10 leading-tight">
+          A Sanctuary Above <br /> <span className="italic font-light text-white/90">the Clouds</span>
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/20 pt-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 border-t border-white/20 pt-10">
           {[
             { label: "3BHK Luxury" },
             { label: "Private Pool" },
             { label: "Mountain View" },
             { label: "Gated Security" },
           ].map((item, i) => (
-            <div key={i} className="text-white">
-              <span className="block text-lg font-medium">{item.label}</span>
+            <div key={i} className="bg-white/5 backdrop-blur-sm border border-white/10 px-4 py-3 rounded-2xl hover:bg-white/10 hover:border-gold/30 transition-all duration-300">
+              <span className="block text-sm md:text-base font-medium text-white">{item.label}</span>
             </div>
           ))}
         </div>
@@ -63,7 +63,7 @@ export default function FeaturesSection() {
         {/* Link updated to /amenities and colors updated */}
         <Link 
           href="/amenities" 
-          className="mt-24 inline-block bg-[#C5A059] text-[#2D3A3A] px-10 py-3 rounded-full font-bold hover:scale-105 transition-transform"
+          className="mt-12 inline-block bg-gold text-sage px-10 py-4 rounded-full font-bold hover:bg-white hover:scale-105 transition-all shadow-lg text-sm tracking-wider"
         >
           DISCOVER MORE
         </Link>

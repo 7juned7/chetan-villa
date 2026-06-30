@@ -19,45 +19,47 @@ const WhatsAppIcon = () => (
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2D3A3A] text-white py-16 px-6">
+    <footer className="bg-sage text-white py-16 px-6 border-t border-white/5">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
         
         {/* Brand Info */}
         <div>
-          <h3 className="font-serif text-2xl text-[#C5A059] mb-4">Silver Steps Villa</h3>
-          <p className="text-white/60 text-sm leading-relaxed">
-            Experience tranquility above the clouds. A luxury 3BHK getaway in the heart of Bhimtal, crafted for memories.
+          <h3 className="font-serif text-2xl text-gold mb-4">Silver Steps Villa</h3>
+          <p className="text-white/60 text-sm leading-relaxed max-w-sm mx-auto md:mx-0">
+            Experience tranquility above the clouds. A luxury 3BHK getaway in the heart of Bhimtal, Uttarakhand, crafted for timeless memories.
           </p>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h4 className="font-bold text-[#C5A059] mb-4 uppercase tracking-widest text-sm">Explore</h4>
-          <ul className="space-y-3 text-white/80">
-            <li><Link href="/" className="hover:text-[#C5A059] transition">Home</Link></li>
-            <li><Link href="/villa" className="hover:text-[#C5A059] transition">The Villa</Link></li>
-            <li><Link href="/amenities" className="hover:text-[#C5A059] transition">Amenities</Link></li>
-            <li><Link href="/location" className="hover:text-[#C5A059] transition">Location</Link></li>
+          <h4 className="font-bold text-gold mb-4 uppercase tracking-widest text-sm font-serif">Explore</h4>
+          <ul className="space-y-3 text-white/85 text-sm">
+            <li><Link href="/" className="hover:text-gold transition">Home</Link></li>
+            <li><Link href="/villa" className="hover:text-gold transition">The Villa</Link></li>
+            <li><Link href="/amenities" className="hover:text-gold transition">Amenities</Link></li>
+            <li><Link href="/gallery" className="hover:text-gold transition">Gallery</Link></li>
+            <li><Link href="/location" className="hover:text-gold transition">Location</Link></li>
+            <li><Link href="/policies" className="hover:text-gold transition">Policies & Rules</Link></li>
           </ul>
         </div>
 
         {/* Contact & Social */}
         <div>
-          <h4 className="font-bold text-[#C5A059] mb-4 uppercase tracking-widest text-sm">Connect</h4>
+          <h4 className="font-bold text-gold mb-4 uppercase tracking-widest text-sm font-serif">Connect</h4>
           <div className="flex justify-center md:justify-start gap-6">
-            <a href="https://www.instagram.com/silverstepsvilla/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A059] transition">
+            <a href="https://www.instagram.com/silverstepsvilla/" target="_blank" rel="noopener noreferrer" className="hover:text-gold text-white/80 transition transform hover:scale-110">
               <InstagramIcon />
             </a>
-            <a href="https://wa.me/918920924077" target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A059] transition">
+            <a href="https://wa.me/918920924077" target="_blank" rel="noopener noreferrer" className="hover:text-gold text-white/80 transition transform hover:scale-110">
               <WhatsAppIcon />
             </a>
           </div>
           
           <div className="mt-8 pt-6 border-t border-white/10">
             <p className="text-white/50 text-xs">© 2026 Silver Steps Villa. All rights reserved.</p>
-            <p className="text-white/40 text-xs mt-2">
+            <p className="text-white/40 text-[10px] mt-2">
               Designed by {" "}
-              <a href="https://www.instagram.com/webjuncture/" target="_blank" rel="noopener noreferrer" className="text-[#C5A059] hover:underline">
+              <a href="https://www.instagram.com/webjuncture/" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">
                 WebJuncture
               </a>
             </p>

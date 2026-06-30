@@ -2,21 +2,26 @@
 
 @theme {
   /* Colors */
-  --color-gold: #D4AF37;
+  --color-gold: #C5A059;
+  --color-sage: #2D3A3A;
+  --color-sand: #F4F1EA;
+  --color-cream: #F8F6F1;
   --color-navy: #0F172A;
-  --color-cream: #F8FAFC;
   --color-emerald: #166534;
 
   /* Font Styling */
-  --font-serif: "Playfair Display", serif;
+  --font-serif: var(--font-serif), serif;
+  --font-sans: var(--font-sans), sans-serif;
 }
 
-
-/* 5. General Layout Tweaks for the Booking Card */
+/* Base Body Style */
 body {
-  background-color: #F4F1EA;
-  color: #2D3A3A;
+  background-color: var(--color-sand);
+  color: var(--color-sage);
+  font-family: var(--font-sans);
 }
+
+/* Nav Link Hover Underline Animation */
 .nav-link {
   position: relative;
   transition: all 0.3s ease;
@@ -35,4 +40,77 @@ body {
 
 .nav-link:hover::after {
   width: 100%;
+}
+
+/* Premium Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-sand);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C5A059/40;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* Custom react-day-picker Styles (v10 Theme Integration) */
+.rdp-root {
+  --rdp-accent-color: var(--color-gold) !important;
+  --rdp-accent-background-color: var(--color-sage) !important;
+  --rdp-day-width: 40px !important;
+  --rdp-day-height: 40px !important;
+  color: var(--color-sage) !important;
+}
+
+.rdp-caption_label {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600 !important;
+  color: var(--color-sage) !important;
+}
+
+.rdp-day {
+  border-radius: 9999px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+.rdp-day_selected {
+  background-color: var(--color-gold) !important;
+  color: white !important;
+  font-weight: 700 !important;
+}
+
+.rdp-day_selected:hover {
+  background-color: #b08e4c !important;
+}
+
+.rdp-day_range_start {
+  border-top-left-radius: 9999px !important;
+  border-bottom-left-radius: 9999px !important;
+}
+
+.rdp-day_range_end {
+  border-top-right-radius: 9999px !important;
+  border-bottom-right-radius: 9999px !important;
+}
+
+.rdp-day_range_middle {
+  background-color: rgba(197, 160, 89, 0.15) !important;
+  color: var(--color-sage) !important;
+  border-radius: 0px !important;
+}
+
+.rdp-day_disabled {
+  color: #ef4444 !important;
+  text-decoration: line-through !important;
+  opacity: 0.4 !important;
 }

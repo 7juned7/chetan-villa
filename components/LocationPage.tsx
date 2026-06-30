@@ -8,20 +8,20 @@ export default function LocationPage() {
   const directionsUrl = "https://maps.app.goo.gl/shmtrcDsghzvmNiH7";
 
   return (
-    <section className="py-24 bg-[#F4F1EA]">
+    <section className="py-24 bg-sand">
       <div className="max-w-6xl mx-auto px-6">
         
         <div className="mb-16 text-center md:text-left">
-          <span className="text-[#C5A059] tracking-[0.4em] uppercase text-xs font-semibold">Our Location</span>
-          <h2 className="text-4xl md:text-5xl font-serif text-[#2D3A3A] mt-4">
+          <span className="text-gold tracking-[0.4em] uppercase text-xs font-semibold">Our Location</span>
+          <h2 className="text-4xl md:text-5xl font-serif text-sage mt-4 leading-tight">
             Finding Your Way to <span className="italic font-light">Silver Steps Villa</span>
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           
           {/* Map Container */}
-          <div className="w-full h-[450px] bg-white rounded-3xl overflow-hidden shadow-xl border border-[#2D3A3A]/10">
+          <div className="w-full h-[450px] bg-white rounded-3xl overflow-hidden shadow-xl border border-sage/10 relative group">
             <iframe
               src={mapEmbedUrl}
               width="100%"
@@ -30,38 +30,39 @@ export default function LocationPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              title="Silver Steps Villa Location Map"
             ></iframe>
           </div>
 
           {/* Connectivity Details */}
           <div className="space-y-6">
             {/* Address */}
-            <div className="flex gap-4 p-6 bg-white rounded-2xl border border-[#2D3A3A]/10 shadow-sm">
-              <MapPin className="text-[#C5A059] shrink-0 mt-1" size={24} />
+            <div className="flex gap-4 p-6 bg-white rounded-2xl border border-sage/5 shadow-sm hover:border-gold/30 transition-all duration-300">
+              <MapPin className="text-gold shrink-0 mt-1" size={24} />
               <div>
-                <h4 className="font-bold text-[#2D3A3A]">Villa Address</h4>
-                <p className="text-sm text-[#2D3A3A]/70 mt-1">Dungsil Talla, Bhimtal, Uttarakhand - 263136</p>
+                <h4 className="font-bold text-sage font-serif">Villa Address</h4>
+                <p className="text-sm text-sage/70 mt-1 leading-relaxed">Dungsil Talla, Bhimtal, Uttarakhand - 263136</p>
               </div>
             </div>
 
             {/* Travel Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="p-6 bg-white rounded-2xl border border-[#2D3A3A]/10 shadow-sm">
-                <Plane className="text-[#C5A059] mb-3" size={24} />
-                <h5 className="font-bold text-[#2D3A3A]">Airport</h5>
-                <p className="text-sm text-[#2D3A3A]/70">Pantnagar (PGH) - 60km</p>
+              <div className="p-6 bg-white rounded-2xl border border-sage/5 shadow-sm hover:border-gold/30 transition-all duration-300">
+                <Plane className="text-gold mb-3" size={24} />
+                <h5 className="font-bold text-sage font-serif">Airport</h5>
+                <p className="text-sm text-sage/70">Pantnagar (PGH) - 60km</p>
               </div>
-              <div className="p-6 bg-white rounded-2xl border border-[#2D3A3A]/10 shadow-sm">
-                <Train className="text-[#C5A059] mb-3" size={24} />
-                <h5 className="font-bold text-[#2D3A3A]">Railway Station</h5>
-                <p className="text-sm text-[#2D3A3A]/70">Kathgodam (KGM) - 25km</p>
+              <div className="p-6 bg-white rounded-2xl border border-sage/5 shadow-sm hover:border-gold/30 transition-all duration-300">
+                <Train className="text-gold mb-3" size={24} />
+                <h5 className="font-bold text-sage font-serif">Railway Station</h5>
+                <p className="text-sm text-sage/70">Kathgodam (KGM) - 25km</p>
               </div>
               
               {/* New By Road Section */}
-              <div className="p-6 bg-white rounded-2xl border border-[#2D3A3A]/10 shadow-sm sm:col-span-2">
-                <Car className="text-[#C5A059] mb-3" size={24} />
-                <h5 className="font-bold text-[#2D3A3A]">By Road</h5>
-                <p className="text-sm text-[#2D3A3A]/70">Well-connected via NH109. Enjoy a scenic drive through the mountains with easy access to our villa gate.</p>
+              <div className="p-6 bg-white rounded-2xl border border-sage/5 shadow-sm sm:col-span-2 hover:border-gold/30 transition-all duration-300">
+                <Car className="text-gold mb-3" size={24} />
+                <h5 className="font-bold text-sage font-serif">By Road</h5>
+                <p className="text-sm text-sage/70 leading-relaxed">Well-connected via NH109. Enjoy a scenic drive through the mountains with easy access to our villa gate.</p>
               </div>
             </div>
 
@@ -70,9 +71,9 @@ export default function LocationPage() {
               href={directionsUrl} 
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center w-full sm:w-auto gap-3 bg-[#2D3A3A] text-white px-8 py-4 rounded-full font-bold hover:bg-[#C5A059] transition-all shadow-lg"
+              className="inline-flex items-center justify-center w-full sm:w-auto gap-3 bg-sage text-white px-8 py-4 rounded-full font-bold hover:bg-gold hover:scale-105 transition-all shadow-lg tracking-wider cursor-pointer text-sm"
             >
-              <Navigation size={20} />
+              <Navigation size={18} />
               GET DIRECTIONS
             </a>
           </div>

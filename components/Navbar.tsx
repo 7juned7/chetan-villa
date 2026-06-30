@@ -49,20 +49,20 @@ export default function Navbar() {
       <nav
         className={`mx-auto transition-all duration-500 ease-in-out border-b ${
           scrolled
-            ? "mt-4 w-[90%] px-6 py-2 rounded-2xl bg-[#2D3A3A]/70 backdrop-blur-md border-white/10 shadow-xl"
-            : "w-full px-6 py-3 bg-[#2D3A3A]/30 backdrop-blur-sm border-white/5"
+            ? "mt-4 w-[90%] px-6 py-2 rounded-2xl bg-sage/85 backdrop-blur-md border-white/10 shadow-xl"
+            : "w-full px-6 py-3 bg-sage/30 backdrop-blur-sm border-white/5"
         }`}
       >
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <Link href="/" className="flex items-center gap-2 relative z-[1001]">
-            <div className="relative w-24 h-24 ">
-             <Image 
-  src="https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781185137/chetan-villa/logo.png"
-  alt="Logo"
-  fill 
-  className="object-contain" 
-  priority
-/>
+            <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24">
+              <Image 
+                src="https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781185137/chetan-villa/logo.png"
+                alt="Logo"
+                fill 
+                className="object-contain" 
+                priority
+              />
             </div>
             <span className="font-serif text-lg font-bold text-white tracking-widest hidden sm:block">
               SILVER STEPS
@@ -71,23 +71,24 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center gap-8 text-white font-medium text-sm">
             {NAV_LINKS.map((link) => (
-              <Link key={link.name} href={link.href} className="hover:text-[#C5A059] transition">
+              <Link key={link.name} href={link.href} className="nav-link hover:text-gold transition pb-1">
                 {link.name}
               </Link>
             ))}
-            {/* Real Instagram Link Added Here */}
-            <a href="https://www.instagram.com/silverstepsvilla/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A059] transition">
+            {/* Real Instagram Link */}
+            <a href="https://www.instagram.com/silverstepsvilla/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition">
               <InstagramIcon size={20} />
             </a>
           </div>
 
-          <Link href="/booking" className="hidden lg:block bg-[#C5A059] text-[#2D3A3A] px-6 py-2.5 rounded-full font-bold hover:scale-105 transition-transform text-sm">
+          <Link href="/booking" className="hidden lg:block bg-gold text-sage px-6 py-2.5 rounded-full font-bold hover:bg-white hover:scale-105 transition-all text-sm shadow-md">
             BOOK NOW
           </Link>
 
           <button
             onClick={() => setMobileMenu(!mobileMenu)}
             className="lg:hidden relative z-[1001] w-10 h-10 flex flex-col justify-center items-center gap-1.5"
+            aria-label="Toggle Menu"
           >
             <span className={`block w-6 h-0.5 bg-white transition-all duration-300 ease-out ${mobileMenu ? "rotate-45 translate-y-2" : "-translate-y-0.5"}`} />
             <span className={`block w-6 h-0.5 bg-white transition-all duration-300 ease-out ${mobileMenu ? "opacity-0" : "opacity-100"}`} />
@@ -97,21 +98,21 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile Menu Overlay */}
-      <div className={`fixed inset-0 z-[9999] bg-[#2D3A3A] pt-10 px-8 transition-all duration-500 ease-in-out ${mobileMenu ? "opacity-100 visible" : "opacity-0 invisible"}`}>
-        <div className="flex justify-end mb-10">
-          <button onClick={() => setMobileMenu(false)} className="text-white text-4xl font-light hover:text-[#C5A059]">×</button>
+      <div className={`fixed inset-0 z-[9999] bg-sage/98 backdrop-blur-lg pt-10 px-8 transition-all duration-500 ease-in-out flex flex-col justify-center ${mobileMenu ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-10"}`}>
+        <div className="absolute top-6 right-6">
+          <button onClick={() => setMobileMenu(false)} className="text-white text-4xl font-light hover:text-gold transition">×</button>
         </div>
         <div className="flex flex-col gap-8 text-3xl font-serif text-white items-center">
           {NAV_LINKS.map((link) => (
-            <Link key={link.name} href={link.href} onClick={() => setMobileMenu(false)} className="hover:text-[#C5A059]">
+            <Link key={link.name} href={link.href} onClick={() => setMobileMenu(false)} className="hover:text-gold transition">
               {link.name}
             </Link>
           ))}
           {/* Real Instagram Link Mobile */}
-          <Link href="https://www.instagram.com/silverstepsvilla/" target="_blank" rel="noopener noreferrer" className="mt-8 justify-center items-center flex gap-2 text-white hover:text-[#C5A059]">
+          <a href="https://www.instagram.com/silverstepsvilla/" target="_blank" rel="noopener noreferrer" className="mt-8 justify-center items-center flex gap-2 text-white hover:text-gold transition">
            Instagram <InstagramIcon size={32} />
-          </Link>
-          <Link href="/booking" onClick={() => setMobileMenu(false)} className="mt-4 bg-[#C5A059] text-[#2D3A3A] px-10 py-4 rounded-full text-lg font-bold text-center">
+          </a>
+          <Link href="/booking" onClick={() => setMobileMenu(false)} className="mt-4 bg-gold text-sage px-10 py-4 rounded-full text-lg font-bold text-center shadow-lg hover:bg-white hover:scale-105 transition-all">
             BOOK YOUR STAY
           </Link>
         </div>
