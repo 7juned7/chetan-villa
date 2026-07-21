@@ -6,31 +6,28 @@ import Link from "next/link"; // Link component ka use behtar hai
 export default function FeaturesSection() {
   return (
     <section className="relative w-full h-[600px] flex items-center justify-center overflow-hidden">
-      {/* LANDSCAPE VIDEO (Desktop) */}
+      {/* OPTIMIZED BACKGROUND VIDEO */}
       <video
         autoPlay
         loop
         muted
         playsInline
-        className="hidden md:block absolute inset-0 w-full h-full object-cover"
+        preload="auto"
+        poster="https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_1280/v1781017678/chetan-villa/outside2_mnemjo.avif"
+        className="absolute inset-0 w-full h-full object-cover"
       >
+        {/* LANDSCAPE VIDEO (Desktop) */}
         <source 
-          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/v1781013295/sp_20260609_1080p_30f_20260609_190753_online-video-cutter.com_gn5to6.mp4" 
+          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/q_auto,f_auto,w_1280/v1781013295/sp_20260609_1080p_30f_20260609_190753_online-video-cutter.com_gn5to6.mp4" 
           type="video/mp4" 
+          media="(min-width: 768px)"
         />
-      </video>
 
-      {/* PORTRAIT VIDEO (Mobile) */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="block md:hidden absolute inset-0 w-full h-full object-cover"
-      >
+        {/* PORTRAIT VIDEO (Mobile) */}
         <source 
-          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/v1781014405/DJI_20260410161548_0039_D_cvpcgr.mov" 
+          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/q_auto,f_auto,w_720/v1781014405/DJI_20260410161548_0039_D_cvpcgr.mp4" 
           type="video/mp4" 
+          media="(max-width: 767px)"
         />
       </video>
       

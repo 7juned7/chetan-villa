@@ -8,31 +8,28 @@ import { ArrowDown } from "lucide-react";
 export default function Hero() {
   return (
     <section className="relative w-full h-screen overflow-hidden bg-black">
-      {/* LANDSCAPE VIDEO (Desktop) */}
+      {/* OPTIMIZED BACKGROUND VIDEO */}
       <video
         autoPlay
         loop
         muted
         playsInline
-        className="hidden md:block absolute inset-0 w-full h-full object-cover"
+        preload="auto"
+        poster="https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_1280/v1781015689/IMG_4343_gusyu3.jpg"
+        className="absolute inset-0 w-full h-full object-cover"
       >
+        {/* LANDSCAPE VIDEO (Desktop) */}
         <source 
-          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/v1781335733/chetan-villa/download_20260613_125440_0000_pslbch.mp4" 
+          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/q_auto,f_auto,w_1280/v1781335733/chetan-villa/download_20260613_125440_0000_pslbch.mp4" 
           type="video/mp4" 
+          media="(min-width: 768px)"
         />
-      </video>
 
-      {/* PORTRAIT VIDEO (Mobile) */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="block md:hidden absolute inset-0 w-full h-full object-cover"
-      >
+        {/* PORTRAIT VIDEO (Mobile) */}
         <source 
-          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/v1781334223/chetan-villa/IMG_4992_ytyzw4.mov" 
+          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/q_auto,f_auto,w_720/v1781334223/chetan-villa/IMG_4992_ytyzw4.mp4" 
           type="video/mp4" 
+          media="(max-width: 767px)"
         />
       </video>
 
