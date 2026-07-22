@@ -12,8 +12,8 @@ export default function ContactPage() {
     <section className="py-24 bg-[#F4F1EA] min-h-screen flex items-center">
       <div className="max-w-4xl mx-auto px-6 w-full">
         <div className="text-center mb-16">
-          <span className="text-[#C5A059] tracking-[0.4em] uppercase text-xs font-semibold">Contact Us</span>
-          <h2 className="text-4xl md:text-5xl font-serif text-[#2D3A3A] mt-4">Get in Touch</h2>
+          <span className="text-[#8F6B23] tracking-[0.4em] uppercase text-xs font-semibold">Contact Us</span>
+          <h1 className="text-4xl md:text-5xl font-serif text-[#2D3A3A] mt-4">Get in Touch</h1>
           <p className="text-[#2D3A3A]/70 mt-4">We are here to answer your questions and help you plan your stay.</p>
         </div>
 

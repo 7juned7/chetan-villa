@@ -24,7 +24,7 @@ export default function SocialProof() {
     <section className="py-24 bg-[#F8F6F1] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-gold tracking-[0.4em] uppercase text-xs font-semibold">Testimonials</span>
+          <span className="text-gold-dark tracking-[0.4em] uppercase text-xs font-semibold">Testimonials</span>
           <h2 className="text-3xl md:text-5xl font-serif text-sage mt-4 leading-tight">
             Voices from <span className="italic font-light">our Guests</span>
           </h2>
@@ -55,7 +55,7 @@ export default function SocialProof() {
                 <div className="w-10 h-10 rounded-full bg-gold/15 text-gold flex items-center justify-center font-bold text-sm border border-gold/20 font-serif shrink-0">
                   {getInitials(review.name)}
                 </div>
-                <h4 className="font-bold text-sage text-sm md:text-base">{review.name}</h4>
+                <h3 className="font-bold text-sage text-sm md:text-base">{review.name}</h3>
               </div>
             </div>
           ))}

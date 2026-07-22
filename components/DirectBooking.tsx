@@ -22,7 +22,7 @@ export default function DirectBooking() {
             <div className="bg-white/10 p-3 rounded-2xl mb-4 text-gold border border-white/10">
               <Tag size={22} />
             </div>
-            <h4 className="text-lg font-medium mb-2 font-serif">Best Price Guaranteed</h4>
+            <h3 className="text-lg font-medium mb-2 font-serif">Best Price Guaranteed</h3>
             <p className="text-white/60 text-sm px-2 leading-relaxed">Save up to 15% via direct booking compared to OTAs.</p>
           </div>
 
@@ -31,7 +31,7 @@ export default function DirectBooking() {
             <div className="bg-white/10 p-3 rounded-2xl mb-4 text-gold border border-white/10">
               <CalendarClock size={22} />
             </div>
-            <h4 className="text-lg font-medium mb-2 font-serif">Flexible Policies</h4>
+            <h3 className="text-lg font-medium mb-2 font-serif">Flexible Policies</h3>
             <p className="text-white/60 text-sm px-2 leading-relaxed">Easy date modifications & transparent cancellation policy.</p>
           </div>
 
@@ -40,7 +40,7 @@ export default function DirectBooking() {
             <div className="bg-white/10 p-3 rounded-2xl mb-4 text-gold border border-white/10">
               <Sparkles size={22} />
             </div>
-            <h4 className="text-lg font-medium mb-2 font-serif">Exclusive Perks</h4>
+            <h3 className="text-lg font-medium mb-2 font-serif">Exclusive Perks</h3>
             <p className="text-white/60 text-sm px-2 leading-relaxed">Complimentary evening bonfire & flexible check-in times.</p>
           </div>
         </div>

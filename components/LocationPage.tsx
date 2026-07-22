@@ -12,10 +12,10 @@ export default function LocationPage() {
       <div className="max-w-6xl mx-auto px-6">
         
         <div className="mb-16 text-center md:text-left">
-          <span className="text-gold tracking-[0.4em] uppercase text-xs font-semibold">Our Location</span>
-          <h2 className="text-4xl md:text-5xl font-serif text-sage mt-4 leading-tight">
+          <span className="text-gold-dark tracking-[0.4em] uppercase text-xs font-semibold">Our Location</span>
+          <h1 className="text-4xl md:text-5xl font-serif text-sage mt-4 leading-tight">
             Finding Your Way to <span className="italic font-light">Silver Steps Villa</span>
-          </h2>
+          </h1>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -40,7 +40,7 @@ export default function LocationPage() {
             <div className="flex gap-4 p-6 bg-white rounded-2xl border border-sage/5 shadow-sm hover:border-gold/30 transition-all duration-300">
               <MapPin className="text-gold shrink-0 mt-1" size={24} />
               <div>
-                <h4 className="font-bold text-sage font-serif">Villa Address</h4>
+                <h2 className="font-bold text-sage font-serif text-base">Villa Address</h2>
                 <p className="text-sm text-sage/70 mt-1 leading-relaxed">Dungsil Talla, Bhimtal, Uttarakhand - 263136</p>
               </div>
             </div>
@@ -49,19 +49,19 @@ export default function LocationPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="p-6 bg-white rounded-2xl border border-sage/5 shadow-sm hover:border-gold/30 transition-all duration-300">
                 <Plane className="text-gold mb-3" size={24} />
-                <h5 className="font-bold text-sage font-serif">Airport</h5>
+                <h3 className="font-bold text-sage font-serif text-base">Airport</h3>
                 <p className="text-sm text-sage/70">Pantnagar (PGH) - 60km</p>
               </div>
               <div className="p-6 bg-white rounded-2xl border border-sage/5 shadow-sm hover:border-gold/30 transition-all duration-300">
                 <Train className="text-gold mb-3" size={24} />
-                <h5 className="font-bold text-sage font-serif">Railway Station</h5>
+                <h3 className="font-bold text-sage font-serif text-base">Railway Station</h3>
                 <p className="text-sm text-sage/70">Kathgodam (KGM) - 25km</p>
               </div>
               
               {/* New By Road Section */}
               <div className="p-6 bg-white rounded-2xl border border-sage/5 shadow-sm sm:col-span-2 hover:border-gold/30 transition-all duration-300">
                 <Car className="text-gold mb-3" size={24} />
-                <h5 className="font-bold text-sage font-serif">By Road</h5>
+                <h3 className="font-bold text-sage font-serif text-base">By Road</h3>
                 <p className="text-sm text-sage/70 leading-relaxed">Well-connected via NH109. Enjoy a scenic drive through the mountains with easy access to our villa gate.</p>
               </div>
             </div>

@@ -5,19 +5,19 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 const GALLERY_IMAGES = [
-  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017681/chetan-villa/bedroom_bv289d.avif", category: "interior", name: "Luxury Suite Bedroom" },
-  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017681/chetan-villa/diningarea_nsi1se.avif", category: "interior", name: "Dining Hall" },
-  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017681/chetan-villa/diningarea2_oiysol.avif", category: "interior", name: "Cozy Lounge Area" },
-  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017679/chetan-villa/livingroom_feoxw7.avif", category: "interior", name: "Main Living Room" },
-  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017679/chetan-villa/pool_lqtgis.avif", category: "exterior", name: "Private Swimming Pool" },
-  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017678/chetan-villa/outside2_mnemjo.avif", category: "exterior", name: "Cottage Exterior View" },
-  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017678/chetan-villa/outside_w6v7l4.avif", category: "exterior", name: "Breathtaking Valley View" },
-  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017678/chetan-villa/lawn2_lqy3j9.avif", category: "exterior", name: "Lush Green Lawns" },
-  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017677/chetan-villa/gym_n3kfrg.avif", category: "amenities", name: "In-house Fitness Gym" },
-  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017678/chetan-villa/lawn_rsbh00.avif", category: "exterior", name: "Manicured Lawn & Garden" },
-  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017677/chetan-villa/bathroom_g8yyva.avif", category: "interior", name: "Premium Bathroom" },
-  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017680/chetan-villa/kitchen_mrbwwn.avif", category: "amenities", name: "Equipped Kitchen" },
-  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017676/chetan-villa/tarreece_zhwwqf.avif", category: "exterior", name: "Open Sun Terrace" }
+  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_800/v1781017681/chetan-villa/bedroom_bv289d.avif", category: "interior", name: "Luxury Suite Bedroom" },
+  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_800/v1781017681/chetan-villa/diningarea_nsi1se.avif", category: "interior", name: "Dining Hall" },
+  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_800/v1781017681/chetan-villa/diningarea2_oiysol.avif", category: "interior", name: "Cozy Lounge Area" },
+  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_800/v1781017679/chetan-villa/livingroom_feoxw7.avif", category: "interior", name: "Main Living Room" },
+  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_800/v1781017679/chetan-villa/pool_lqtgis.avif", category: "exterior", name: "Private Swimming Pool" },
+  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_800/v1781017678/chetan-villa/outside2_mnemjo.avif", category: "exterior", name: "Cottage Exterior View" },
+  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_800/v1781017678/chetan-villa/outside_w6v7l4.avif", category: "exterior", name: "Breathtaking Valley View" },
+  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_800/v1781017678/chetan-villa/lawn2_lqy3j9.avif", category: "exterior", name: "Lush Green Lawns" },
+  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_800/v1781017677/chetan-villa/gym_n3kfrg.avif", category: "amenities", name: "In-house Fitness Gym" },
+  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_800/v1781017678/chetan-villa/lawn_rsbh00.avif", category: "exterior", name: "Manicured Lawn & Garden" },
+  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_800/v1781017677/chetan-villa/bathroom_g8yyva.avif", category: "interior", name: "Premium Bathroom" },
+  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_800/v1781017680/chetan-villa/kitchen_mrbwwn.avif", category: "amenities", name: "Equipped Kitchen" },
+  { src: "https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_800/v1781017676/chetan-villa/tarreece_zhwwqf.avif", category: "exterior", name: "Open Sun Terrace" }
 ];
 
 const CATEGORIES = ["all", "interior", "exterior", "amenities"];
@@ -46,10 +46,10 @@ export default function GalleryPage() {
     <section className="py-24 bg-sand min-h-screen">
       {/* Gallery Header */}
       <div className="max-w-6xl mx-auto px-6 mb-12 text-center">
-        <span className="text-gold tracking-[0.4em] uppercase text-xs font-semibold">Our Space</span>
-        <h2 className="text-4xl md:text-5xl font-serif text-sage mt-4 leading-tight">
+        <span className="text-gold-dark tracking-[0.4em] uppercase text-xs font-semibold">Our Space</span>
+        <h1 className="text-4xl md:text-5xl font-serif text-sage mt-4 leading-tight">
           Experience <span className="italic font-light">Elegance</span>
-        </h2>
+        </h1>
         <p className="mt-4 text-sage/70 max-w-xl mx-auto text-sm md:text-base leading-relaxed">
           A glimpse into the serene beauty and luxury that awaits you at Silver Steps Villa.
         </p>

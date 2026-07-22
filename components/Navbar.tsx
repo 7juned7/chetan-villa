@@ -55,13 +55,14 @@ export default function Navbar() {
       >
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <Link href="/" className="flex items-center gap-2 relative z-[1001]">
-            <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24">
-              <Image 
-                src="https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781185137/chetan-villa/logo.png"
-                alt="Logo"
-                fill 
-                className="object-contain" 
-                priority
+            <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center">
+              <img 
+                src="https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_120/v1781185137/chetan-villa/logo.png"
+                alt="Silver Steps Villa Logo"
+                width="96"
+                height="96"
+                className="object-contain w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24"
+                loading="eager"
               />
             </div>
             <span className="font-serif text-lg font-bold text-white tracking-widest hidden sm:block">
@@ -76,7 +77,7 @@ export default function Navbar() {
               </Link>
             ))}
             {/* Real Instagram Link */}
-            <a href="https://www.instagram.com/silverstepsvilla/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition">
+            <a href="https://www.instagram.com/silverstepsvilla/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition" aria-label="Instagram">
               <InstagramIcon size={20} />
             </a>
           </div>
@@ -100,7 +101,7 @@ export default function Navbar() {
       {/* Mobile Menu Overlay */}
       <div className={`fixed inset-0 z-[9999] bg-sage/98 backdrop-blur-lg pt-10 px-8 transition-all duration-500 ease-in-out flex flex-col justify-center ${mobileMenu ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-10"}`}>
         <div className="absolute top-6 right-6">
-          <button onClick={() => setMobileMenu(false)} className="text-white text-4xl font-light hover:text-gold transition">×</button>
+          <button onClick={() => setMobileMenu(false)} className="text-white text-4xl font-light hover:text-gold transition p-2 cursor-pointer" aria-label="Close mobile menu">×</button>
         </div>
         <div className="flex flex-col gap-8 text-3xl font-serif text-white items-center">
           {NAV_LINKS.map((link) => (
@@ -109,7 +110,7 @@ export default function Navbar() {
             </Link>
           ))}
           {/* Real Instagram Link Mobile */}
-          <a href="https://www.instagram.com/silverstepsvilla/" target="_blank" rel="noopener noreferrer" className="mt-8 justify-center items-center flex gap-2 text-white hover:text-gold transition">
+          <a href="https://www.instagram.com/silverstepsvilla/" target="_blank" rel="noopener noreferrer" className="mt-8 justify-center items-center flex gap-2 text-white hover:text-gold transition" aria-label="Instagram">
            Instagram <InstagramIcon size={32} />
           </a>
           <Link href="/booking" onClick={() => setMobileMenu(false)} className="mt-4 bg-gold text-sage px-10 py-4 rounded-full text-lg font-bold text-center shadow-lg hover:bg-white hover:scale-105 transition-all">

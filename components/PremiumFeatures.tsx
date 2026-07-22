@@ -5,11 +5,11 @@ import { Mountain, Droplets, Dumbbell, Wifi, Trees, ShieldCheck } from "lucide-r
 import { motion, AnimatePresence } from "framer-motion";
 
 const IMAGES = [
-  "https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781015689/IMG_4343_gusyu3.jpg",
-  "https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017677/chetan-villa/gym_n3kfrg.avif",
-  "https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017679/chetan-villa/pool_lqtgis.avif",
-  "https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017678/chetan-villa/outside2_mnemjo.avif",
-  "https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017682/chetan-villa/bedroomtv_pw8yno.avif",
+  "https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_1000/v1781015689/IMG_4343_gusyu3.jpg",
+  "https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_1000/v1781017677/chetan-villa/gym_n3kfrg.avif",
+  "https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_1000/v1781017679/chetan-villa/pool_lqtgis.avif",
+  "https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_1000/v1781017678/chetan-villa/outside2_mnemjo.avif",
+  "https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_1000/v1781017682/chetan-villa/bedroomtv_pw8yno.avif",
 ];
 
 const FEATURES = [
@@ -45,12 +45,14 @@ export default function PremiumFeatures() {
             exit={{ opacity: 0 }}
             transition={{ duration: 2.0, ease: "easeInOut" }}
             className="absolute inset-0 w-full h-full object-cover"
+            loading="lazy"
+            decoding="async"
           />
         </AnimatePresence>
       </div>
       
       {/* Dark Readability Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-sage/15 via-sage/80 to-transparent md:bg-sage/35 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-sage/95 via-sage/80 to-transparent md:bg-sage/75 z-10" />
 
       <div className="relative z-20 max-w-5xl mx-auto px-6 md:px-8">
         <div className="mb-16">
@@ -72,7 +74,7 @@ export default function PremiumFeatures() {
             >
               <div className="text-gold mt-1 shrink-0 bg-white/5 p-2 rounded-xl border border-white/10">{f.icon}</div>
               <div>
-                <h4 className="text-lg font-medium text-white mb-1 font-serif">{f.title}</h4>
+                <h3 className="text-lg font-medium text-white mb-1 font-serif">{f.title}</h3>
                 <p className="text-white/70 text-sm leading-relaxed">{f.desc}</p>
               </div>
             </motion.div>

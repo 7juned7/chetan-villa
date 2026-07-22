@@ -1,0 +1,12 @@
+# Silver Steps Villa
+
+> Silver Steps Villa is a luxury 3BHK holiday cottage in Bhimtal, Uttarakhand. Featuring a private swimming pool, fitness gym, lush private lawn, and panoramic mountain valley views.
+
+## Pages & Resources
+- [Home](https://www.silverstepsvilla.in/): Villa highlights, amenities, location, and guest testimonials.
+- [The Villa](https://www.silverstepsvilla.in/villa): Cottage layout, 3 bedrooms, self-catering options, and architecture.
+- [Amenities](https://www.silverstepsvilla.in/amenities): Private pool, gym, high-speed Wi-Fi, bonfire setups, and private parking.
+- [Gallery](https://www.silverstepsvilla.in/gallery): High-resolution photo gallery categorized by interior, exterior, and amenities.
+- [Booking](https://www.silverstepsvilla.in/booking): Live calendar availability check and direct WhatsApp booking inquiry.
+- [Location](https://www.silverstepsvilla.in/location): Address, GPS directions, nearby airports (Pantnagar), and railway stations (Kathgodam).
+- [Policies](https://www.silverstepsvilla.in/policies): Check-in/check-out timing, cancellation rules, house rules, and pet policy.

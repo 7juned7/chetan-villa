@@ -31,7 +31,8 @@ export default function BookingPage() {
         <button
           type="button"
           onClick={() => setValue(Math.max(0, value - 1))}
-          className="w-9 h-9 rounded-full border border-sage/20 flex items-center justify-center hover:bg-sand transition text-sage font-bold focus:outline-none cursor-pointer"
+          aria-label={`Decrease ${label}`}
+          className="w-11 h-11 rounded-full border border-sage/20 flex items-center justify-center hover:bg-sand transition text-sage font-bold focus:outline-none cursor-pointer text-lg"
         >
           −
         </button>
@@ -43,7 +44,8 @@ export default function BookingPage() {
         <button
           type="button"
           onClick={() => setValue(value + 1)}
-          className="w-9 h-9 rounded-full border border-sage/20 flex items-center justify-center hover:bg-sand transition text-sage font-bold focus:outline-none cursor-pointer"
+          aria-label={`Increase ${label}`}
+          className="w-11 h-11 rounded-full border border-sage/20 flex items-center justify-center hover:bg-sand transition text-sage font-bold focus:outline-none cursor-pointer text-lg"
         >
           +
         </button>
@@ -103,15 +105,17 @@ Please share pricing and availability details.`;
         <div className="lg:col-span-5 flex flex-col justify-between bg-sage text-white p-8 md:p-10 rounded-3xl shadow-xl relative overflow-hidden border border-white/5 min-h-[400px] lg:min-h-0">
           <div className="absolute inset-0 bg-gradient-to-t from-sage via-sage/80 to-transparent z-10" />
           <img 
-            src="https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781019330/chetan-villa/villaa_u4ozmd.avif" 
+            src="https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_800/v1781019330/chetan-villa/villaa_u4ozmd.avif" 
             alt="Silver Steps Villa"
             className="absolute inset-0 w-full h-full object-cover opacity-25"
+            loading="lazy"
+            decoding="async"
           />
 
           <div className="relative z-20 space-y-8 flex-grow">
             <div>
               <span className="text-gold tracking-[0.3em] uppercase text-xs font-bold block mb-2 font-serif">Direct Booking</span>
-              <h2 className="text-3xl md:text-4xl font-serif text-white leading-tight">Plan Your <br/>Mountain Escape</h2>
+              <h1 className="text-3xl md:text-4xl font-serif text-white leading-tight">Plan Your <br/>Mountain Escape</h1>
               <p className="text-white/70 text-sm mt-3 leading-relaxed">
                 Connect directly with us to get the best pricing, priority check-in assistance, and personalized stay planning.
               </p>
@@ -122,7 +126,7 @@ Please share pricing and availability details.`;
               <div className="flex gap-3.5 items-start">
                 <Sparkles className="text-gold shrink-0 mt-0.5" size={18} />
                 <div>
-                  <h4 className="text-sm font-semibold text-white font-serif">Exclusive Benefits</h4>
+                  <h2 className="text-sm font-semibold text-white font-serif">Exclusive Benefits</h2>
                   <p className="text-white/60 text-xs mt-0.5 leading-relaxed">Save up to 15% booking fees, flexible date changes, and complimentary bonfires.</p>
                 </div>
               </div>
@@ -130,7 +134,7 @@ Please share pricing and availability details.`;
               <div className="flex gap-3.5 items-start">
                 <Clock className="text-gold shrink-0 mt-0.5" size={18} />
                 <div>
-                  <h4 className="text-sm font-semibold text-white font-serif">Flexible Hours</h4>
+                  <h2 className="text-sm font-semibold text-white font-serif">Flexible Hours</h2>
                   <p className="text-white/60 text-xs mt-0.5 leading-relaxed">Check-in at 2:00 PM, Check-out at 11:00 AM. Early check-in prioritised.</p>
                 </div>
               </div>
@@ -138,7 +142,7 @@ Please share pricing and availability details.`;
               <div className="flex gap-3.5 items-start">
                 <ShieldCheck className="text-gold shrink-0 mt-0.5" size={18} />
                 <div>
-                  <h4 className="text-sm font-semibold text-white font-serif">Peace of Mind</h4>
+                  <h2 className="text-sm font-semibold text-white font-serif">Peace of Mind</h2>
                   <p className="text-white/60 text-xs mt-0.5 leading-relaxed">Gated cottage sanctuary with private parking, pool, gym, and 24/7 security.</p>
                 </div>
               </div>
@@ -154,7 +158,7 @@ Please share pricing and availability details.`;
         {/* Right Column: Calendar Controls Card */}
         <div className="lg:col-span-7 bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-sage/5 flex flex-col justify-between">
           <div>
-            <h3 className="text-xl md:text-2xl font-serif text-sage mb-1 text-center lg:text-left">Select Dates</h3>
+            <h2 className="text-xl md:text-2xl font-serif text-sage mb-1 text-center lg:text-left">Select Dates</h2>
             <p className="text-xs text-red-500 mb-6 text-center lg:text-left italic">
               Dates highlighted in red are already reserved.
             </p>

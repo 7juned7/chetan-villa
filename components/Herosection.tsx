@@ -15,19 +15,21 @@ export default function Hero() {
         muted
         playsInline
         preload="auto"
-        poster="https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_1280/v1781015689/IMG_4343_gusyu3.jpg"
+        poster="https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_1000/v1781015689/IMG_4343_gusyu3.jpg"
         className="absolute inset-0 w-full h-full object-cover"
+        aria-hidden="true"
       >
+        <track kind="captions" src="data:text/vtt,WEBVTT" label="English captions disabled" default />
         {/* LANDSCAPE VIDEO (Desktop) */}
         <source 
-          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/q_auto,f_auto,w_1280/v1781335733/chetan-villa/download_20260613_125440_0000_pslbch.mp4" 
+          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/q_auto:eco,f_auto,w_1280/v1781335733/chetan-villa/download_20260613_125440_0000_pslbch.mp4" 
           type="video/mp4" 
           media="(min-width: 768px)"
         />
 
         {/* PORTRAIT VIDEO (Mobile) */}
         <source 
-          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/q_auto,f_auto,w_720/v1781334223/chetan-villa/IMG_4992_ytyzw4.mp4" 
+          src="https://res.cloudinary.com/ddy8vp8zy/video/upload/q_auto:eco,f_auto,w_640/v1781334223/chetan-villa/IMG_4992_ytyzw4.mp4" 
           type="video/mp4" 
           media="(max-width: 767px)"
         />

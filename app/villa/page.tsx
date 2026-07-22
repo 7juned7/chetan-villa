@@ -9,9 +9,11 @@ export default function VillaPage() {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <img 
-          src="https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781019330/chetan-villa/villaa_u4ozmd.avif" 
+          src="https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_1280/v1781019330/chetan-villa/villaa_u4ozmd.avif" 
           className="absolute inset-0 w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-[4000ms] ease-out" 
           alt="Villa Hero"
+          loading="eager"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-black/50" />
         <h1 className="relative z-10 text-white text-5xl md:text-7xl font-serif tracking-wide">The Villa</h1>
@@ -54,10 +56,28 @@ export default function VillaPage() {
           </div>
 
           <div className="space-y-6">
-            <img src="https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017681/chetan-villa/diningarea2_oiysol.avif" className="rounded-3xl shadow-lg border border-sage/5" alt="Living Room" />
+            <img 
+              src="https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_800/v1781017681/chetan-villa/diningarea2_oiysol.avif" 
+              className="rounded-3xl shadow-lg border border-sage/5" 
+              alt="Living Room"
+              loading="lazy"
+              decoding="async" 
+            />
             <div className="grid grid-cols-2 gap-4">
-              <img src="https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017679/chetan-villa/livingroom_feoxw7.avif" className="rounded-2xl shadow-md h-40 w-full object-cover border border-sage/5" alt="View" />
-              <img src="https://res.cloudinary.com/ddy8vp8zy/image/upload/v1781017676/chetan-villa/tarreece_zhwwqf.avif" className="rounded-2xl shadow-md h-40 w-full object-cover border border-sage/5" alt="Pool" />
+              <img 
+                src="https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_600/v1781017679/chetan-villa/livingroom_feoxw7.avif" 
+                className="rounded-2xl shadow-md h-40 w-full object-cover border border-sage/5" 
+                alt="View"
+                loading="lazy"
+                decoding="async" 
+              />
+              <img 
+                src="https://res.cloudinary.com/ddy8vp8zy/image/upload/q_auto,f_auto,w_600/v1781017676/chetan-villa/tarreece_zhwwqf.avif" 
+                className="rounded-2xl shadow-md h-40 w-full object-cover border border-sage/5" 
+                alt="Pool"
+                loading="lazy"
+                decoding="async" 
+              />
             </div>
           </div>
         </div>

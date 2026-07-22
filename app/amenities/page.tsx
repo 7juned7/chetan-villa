@@ -46,7 +46,7 @@ export default function AmenitiesPage() {
         
         {/* Header */}
         <div className="text-center mb-20">
-          <span className="text-gold tracking-[0.4em] uppercase text-xs font-semibold">Our Offerings</span>
+          <span className="text-gold-dark tracking-[0.4em] uppercase text-xs font-semibold">Our Offerings</span>
           <h1 className="text-4xl md:text-5xl font-serif text-sage mt-4 leading-tight">
             Everything you need for a <span className="italic font-light">Perfect Stay</span>
           </h1>
@@ -56,14 +56,14 @@ export default function AmenitiesPage() {
         <div className="space-y-16">
           {AMENITY_CATEGORIES.map((category, idx) => (
             <div key={idx}>
-              <h3 className="text-2xl font-serif text-sage mb-8 border-b border-gold/30 pb-4">
+              <h2 className="text-2xl font-serif text-sage mb-8 border-b border-gold/30 pb-4">
                 {category.title}
-              </h3>
+              </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {category.items.map((item, i) => (
                   <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-sage/5 hover:border-gold/50 hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex flex-col justify-start">
                     <div className="text-gold mb-4 bg-sand/50 w-fit p-3 rounded-xl border border-sage/5">{item.icon}</div>
-                    <h4 className="text-lg font-bold text-sage mb-2 font-serif">{item.name}</h4>
+                    <h3 className="text-lg font-bold text-sage mb-2 font-serif">{item.name}</h3>
                     <p className="text-sm text-sage/60 leading-relaxed">{item.desc}</p>
                   </div>
                 ))}

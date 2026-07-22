@@ -47,27 +47,39 @@ export default function Footer() {
         <div>
           <h4 className="font-bold text-gold mb-4 uppercase tracking-widest text-sm font-serif">Connect</h4>
           <div className="flex justify-center md:justify-start gap-6">
-            <a href="https://www.instagram.com/silverstepsvilla/" target="_blank" rel="noopener noreferrer" className="hover:text-gold text-white/80 transition transform hover:scale-110">
+            <a 
+              href="https://www.instagram.com/silverstepsvilla/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-gold text-white/80 transition transform hover:scale-110"
+              aria-label="Follow Silver Steps Villa on Instagram"
+            >
               <InstagramIcon />
             </a>
-            <a href="https://wa.me/918920924077" target="_blank" rel="noopener noreferrer" className="hover:text-gold text-white/80 transition transform hover:scale-110">
+            <a 
+              href="https://wa.me/918920924077" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-gold text-white/80 transition transform hover:scale-110"
+              aria-label="Chat with Silver Steps Villa on WhatsApp"
+            >
               <WhatsAppIcon />
             </a>
           </div>
           
           <div className="mt-8 pt-6 border-t border-white/10">
-            <p className="text-white/50 text-xs">© 2026 Silver Steps Villa. All rights reserved.</p>
-            <p className="text-white/40 text-xs mt-2">
+            <p className="text-white/80 text-xs">© 2026 Silver Steps Villa. All rights reserved.</p>
+            <p className="text-white/70 text-xs mt-2">
               Designed by{" "}
               <a href="https://webjuncture.in" target="_blank" rel="noopener noreferrer" className="text-gold font-medium hover:underline">
                 WebJuncture
               </a>{" "}
               —{" "}
-              <a href="https://webjuncture.in" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-gold transition">
+              <a href="https://webjuncture.in" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition">
                 webjuncture.in
               </a>
               {" • "}
-              <a href="https://www.instagram.com/webjuncture/" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-gold transition">
+              <a href="https://www.instagram.com/webjuncture/" target="_blank" rel="noopener noreferrer" className="text-white/85 hover:text-gold transition">
                 Instagram
               </a>
             </p>
